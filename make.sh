@@ -1,0 +1,2 @@
+#!/bin/sh
+git show origin/nix-binary:nix > /tmp/nix; chmod +x /tmp/nix; /tmp/nix --extra-experimental-features 'nix-command flakes' flake show
